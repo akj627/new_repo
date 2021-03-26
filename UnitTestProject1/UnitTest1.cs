@@ -47,6 +47,8 @@ namespace UnitTestProject1
             Assert.AreEqual(2, ret);
             ret = c.FindElement(arrayOfElem, 990);
             Assert.AreEqual(-1, ret);
+            ret = c.FindElement(arrayOfElem, 32489);
+            Assert.AreEqual(4, ret);
             ret = c.FindElement(arrayOfElem, 990);
             Assert.AreNotEqual(0, ret);
             ret = c.FindElement(arrayOfElem, 1000);
